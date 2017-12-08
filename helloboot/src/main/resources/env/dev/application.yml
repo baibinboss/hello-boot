@@ -4,7 +4,6 @@ spring:
         url: jdbc:mysql://10.11.25.166:3306/ehr_car
         username: root
         password: root
-        # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         filters: stat
@@ -20,6 +19,6 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
-
-
-
+redis:
+    hostname: 192.168.122.215
+    port: 6379
